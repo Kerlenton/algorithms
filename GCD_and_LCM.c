@@ -3,8 +3,8 @@
 
 size_t GCD(size_t a, size_t b)
 {
-	//assert(a >= 0);
-	//assert(b >= 0);
+	assert(a >= 0);
+	assert(b >= 0);
 	if (a == 0)
 		return b;
 
