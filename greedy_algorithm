@@ -27,7 +27,7 @@ void greedyALG(size_t n)
 
 	while (n != 0)
 	{
-		j = search1(n, x, y); // or j = search1(n, x, y)
+		j = search1(n, x, y); // or j = search2(n, x, y)
 		printf("%u+", power(x, j));
 		n = n - power(x, j);
 	}
