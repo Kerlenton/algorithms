@@ -1,9 +1,11 @@
-int binsearch(int x, int v[], int n)
+#include <stdint.h>
+
+size_t binsearch(size_t v[], size_t x, size_t size)
 {
-	int low, high, mid;
+	size_t low, high, mid;
 
 	low = 0;
-	high = n - 1;
+	high = size - 1;
 
 	while (low <= high)
 	{
