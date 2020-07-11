@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include "head.h"
+#include "trig.h"
 
 static int factorial(int x)
 {
