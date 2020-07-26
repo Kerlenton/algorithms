@@ -23,7 +23,5 @@ float n(float x1, float x2)
 int main(void)
 {
 	printf("%f", n(0, 100));
-
-	system("PAUSE");
 	return 0;
 }
