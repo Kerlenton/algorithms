@@ -19,10 +19,9 @@ float dist(float v, float a)
 	return x;
 }
 
-int main()
+int main(void)
 {
 	printf("%f", dist(10, 45));
 
-	system("PAUSE");
 	return 0;
 }
