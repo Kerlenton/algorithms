@@ -17,7 +17,5 @@ float pi()
 int main(void)
 {
 	printf("%f", pi());
-
-	system("PAUSE");
 	return 0;
 }
