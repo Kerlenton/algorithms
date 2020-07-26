@@ -38,7 +38,7 @@ void greedyALG(signed int n)
 	putchar('\n');
 }
 
-main()
+int main(void)
 {
 	greedyALG(5);
 	return 0;
