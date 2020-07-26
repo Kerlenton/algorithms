@@ -41,7 +41,5 @@ void greedyALG(signed int n)
 main()
 {
 	greedyALG(5);
-
-	system("PAUSE");
 	return 0;
 }
