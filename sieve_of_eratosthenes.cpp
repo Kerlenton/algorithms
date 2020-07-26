@@ -56,6 +56,6 @@ int main(void)
 	}
 
 	putchar('\n');
-	system("PAUSE");
+
 	return 0;
 }
