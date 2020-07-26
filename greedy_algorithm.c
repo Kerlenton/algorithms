@@ -40,7 +40,5 @@ void greedyALG(size_t n)
 main()
 {
 	greedyALG(5);
-
-	system("PAUSE");
 	return 0;
 }
