@@ -7,11 +7,6 @@
   X(Blue) \
   X(Unknown)
 
-enum
-{
-    HELO, HEL
-};
-
 enum Colors {
 #define X(x) x,
   LIST_OF_COLORS
