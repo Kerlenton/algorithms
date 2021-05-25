@@ -14,7 +14,7 @@ int gcd(int a, int b, int *x, int *y)
     
     d = gcd(b, a % b, &x1, &y1);
     *x = y1;
-    *y = x1 - (a % b) * y1;
+    *y = x1 - (a / b) * y1;
     
     return d;
 }  
