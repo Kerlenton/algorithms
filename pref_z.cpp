@@ -43,7 +43,7 @@ void pref_f(string s)
 
 void z_f(string s)
 {
-  vector<int> z(s.length(), 0);
+  vector<int> z(s.length());
 
   z[0] = 0;
 
@@ -52,7 +52,7 @@ void z_f(string s)
   
   for (int i = 1; i < s.length(); i++)
   {
-    if (i < r)
+    if (i <= r)
       z[i] = min(r - i + 1, z[i - l]);
 
     else
@@ -61,15 +61,17 @@ void z_f(string s)
 	     z[i]++;
     }
 
-      if (r < i + z[i])
+      if (r < i + z[i] - 1)
       {
-	r = i + z[i];
+	r = i + z[i] - 1;
 	l = i;
       }
   }
 
   for (int i = 0; i < s.length(); i++)
     cout << z[i] << ' ';
+
+  cout << endl;
 }
 
 
@@ -86,8 +88,9 @@ int main(void)
 
   cin >> s;
 
-  pref_f(s);
   z_f(s);
+  pref_f(s);
+  
   
   return 0;
 }
