@@ -55,11 +55,8 @@ void z_f(string s)
     if (i <= r)
       z[i] = min(r - i + 1, z[i - l]);
 
-    else
-    {
-      while (z[i] + i < s.length() && s[z[i] + i] == s[z[i]])
-	     z[i]++;
-    }
+    while (z[i] + i < s.length() && s[z[i] + i] == s[z[i]])
+      z[i]++;
 
       if (r < i + z[i] - 1)
       {
